@@ -1,10 +1,9 @@
-https://codedrills.io/problems/subsegment-xor-sum
+// https://codedrills.io/problems/subsegment-xor-sum
 
-instead of counting xor of all subarrays just see when the particular bit can contribute.
-make a prefix sum array for each bit (say kth bit) and if on ith index (ind) the sum is odd, we find the no. of past sum that were even (say jth ind) and vice versa,
-so that ith bit will contribute if we take subarray from j+1 to i as they have odd no. of times the kth bit set, i.e. adding (1<<k) to ans as this bit contributers for this particular subarray
+// instead of counting xor of all subarrays just see when the particular bit can contribute.
+// make a prefix sum array for each bit (say kth bit) and if on ith index (ind) the sum is odd, we find the no. of past sum that were even (say jth ind) and vice versa,
+// so that ith bit will contribute if we take subarray from j+1 to i as they have odd no. of times the kth bit set, i.e. adding (1<<k) to ans as this bit contributers for this particular subarray
 
-```ruby
 #include <bits/stdc++.h>
 using namespace std;
 #define endl "\n"
@@ -149,4 +148,3 @@ int32_t main()
     }
     return 0;
 }
-```
