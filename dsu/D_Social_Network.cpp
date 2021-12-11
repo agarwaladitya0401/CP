@@ -1,3 +1,8 @@
+/*
+prob link: https://codeforces.com/contest/1609/problem/D
+seen solution from: https://www.youtube.com/watch?v=AdoR2RDX8g8
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 #define endl "\n"
